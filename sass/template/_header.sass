@@ -1,0 +1,64 @@
+.header
+    padding: 30px 0 17px
+    &__logo
+        +flex-wrap
+    &__contacts
+        margin-top: 13px
+        +flex-wrap
+    &__content
+        max-width: 1164px
+        margin-left: auto
+        +flex-wrap
+        justify-content: space-between
+.logo
+    &__text
+        color: $white
+        line-height: 16px
+        max-width: 250px
+        margin: 5px 0 0 25px
+        strong
+            +bold    
+    &__image
+        width: 76px
+        height: 60px 
+.social
+    &__link
+        &-telegram,
+        &-whatsapp
+            border: 1px dashed $grey
+            border-radius: 50%
+            width: 40px
+            height: 40px
+            +flex-content-center
+        &-telegram
+            svg
+                width: 18px
+                color: $yellow
+        &-whatsapp
+            svg
+                width: 18px
+                color: $yellow
+    &__item
+        &:first-child
+            margin-right: 25px
+.phone
+    font-size: 30px
+    color: $white
+    display: block
+    span
+        +bold      
+.contacts
+    &__social
+        margin: -3px 18px 0 0
+        padding: 0
+        list-style: none 
+        +flex-wrap
+    &-telephone
+        text-align: right
+        &__button
+            background: transparent
+            color: $white
+            border: none
+            padding-bottom: 4px
+            border-bottom: 1px dashed $darkGrey
+            margin-right: -5px

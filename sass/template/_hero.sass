@@ -1,0 +1,174 @@
+.hero
+    padding: 63px 0 15px
+    &--line
+        border-top: 1px solid $line
+        border-bottom: 1px solid $line
+    &__title
+        color: $white
+        margin: 0 0 47px
+        line-height: 47px
+        font-size: 50px
+        max-width: 750px
+    &__content
+        margin-left: 15px
+    &__description
+        max-width: 430px
+        margin: 0 0 67px
+        font-size: 18px
+        line-height: 24px
+        color: $white
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            top: 85px
+            right: 30px
+            background: url('../img/arrow.png') center no-repeat
+            width: 93px
+            height: 146px
+        span
+            color: $orange
+            +bold
+            display: block
+        strong
+            +bold
+    &__button
+        max-width: 294px
+        height: 77px
+        margin-bottom: 23px
+        position: relative
+        z-index: 5
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: -25px
+            background: url('../img/hammer.png') center no-repeat
+            width: 101px
+            height: 84px 
+    &__bonus
+        margin: 0 0 22px 3px
+        color: $white
+        +bold
+        font-size: 18px
+        &-list
+            padding: 0
+            margin: 0 0 97px
+            list-style: none
+        &-item
+            position: relative
+            font-size: 18px
+            line-height: 19px
+            color: $white
+            max-width: 280px
+            padding-left: 43px
+            margin-bottom: 20px
+            &::after
+                content: ''
+                background: url('../img/plus.png') no-repeat
+                width: 20px
+                height: 20px
+                position: absolute
+                top: 8px
+                left: 3px
+            &:last-child
+                margin-bottom: 0
+    &__expertises
+        margin-bottom: 12px
+.expertise
+    &:nth-child(2)
+        .expertise
+            &__text
+                width: 156px
+    &s
+        +flex-wrap
+    &__title
+        color: $orange
+        font-size: 18px
+        line-height: 19px
+        +bold
+    &__text
+        width: 215px
+        color: $white   
+        font-size: 18px
+        line-height: 19px            
+.lawyer
+    &-oksana
+        background: url('../img/oksana.png') center no-repeat
+        max-width: 704px
+        width: 100%
+        height: 704px       
+        position: absolute
+        top: 32%
+        right: 29%
+        &__position
+            position: absolute
+            right: 26%
+            bottom: 21.5%
+            color: $white
+            &::after
+                content: ''
+                width: 10px
+                height: 1px
+                background-color: $white
+                position: absolute
+                bottom: -7px
+                left: 0
+        &__name
+            position: absolute
+            right: 10%
+            bottom: 13.5%
+            color: $white
+            font-size: 18px
+            span
+                display: block
+                color: $orange
+                +bold
+        &__experience
+            position: absolute
+            right: 6.6%
+            bottom: 7.7%
+            color: $white
+            font-size: 18px
+            +bold
+    &-yulia
+        // background: url('../img/yulia.png') center no-repeat
+        // max-width: 704px
+        // width: 100%
+        // height: 704px       
+        // position: absolute
+        // top: 40%
+        // right: 10%
+        &__position
+            position: absolute
+            right: 19%
+            bottom: 30.5%
+            color: $white
+            &::after
+                content: ''
+                width: 10px
+                height: 1px
+                background-color: $white
+                position: absolute
+                bottom: -7px
+                left: 45px
+        &__name
+            position: absolute
+            right: 19%
+            bottom: 24.5%
+            color: $white
+            font-size: 18px
+            line-height: 21px
+            span
+                display: block
+                color: $orange
+                +bold
+                text-align: right
+        &__experience
+            position: absolute
+            right: 19%
+            bottom: 20%
+            color: $white
+            font-size: 18px
+            +bold
+            text-align: right

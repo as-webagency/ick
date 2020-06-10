@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Petrogradski';
+    font-display: swap;
+    src: url('../fonts/Petrogradski.eot');
+    src: local('Petrogradski'),
+        url('../fonts/Petrogradski.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Petrogradski.woff2') format('woff2'),
+        url('../fonts/Petrogradski.woff') format('woff'),
+        url('../fonts/Petrogradski.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-display: swap;
+    src: url('../fonts/MullerBold.eot');
+    src: local('Muller Bold'), local('MullerBold'),
+        url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff'),
+        url('../fonts/MullerBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerRegular';
+    font-display: swap;
+    src: url('../fonts/MullerRegular.eot');
+    src: local('☞MullerRegular'), local('MullerRegular'),
+        url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff'),
+        url('../fonts/MullerRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

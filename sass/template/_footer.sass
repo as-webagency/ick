@@ -1,0 +1,29 @@
+.footer
+    padding: 36px 0
+    &__content
+        +flex-wrap
+        justify-content: space-between
+        max-width: 1163px
+        margin-left: auto
+    &__link
+        color: $white
+        display: block
+        line-height: 16px
+    &__circles
+
+.circles
+    &__list
+        margin: 5px 0
+        padding: 0
+        list-style: none
+        +flex
+    &__item
+        margin: 0 30px
+        background-color: $dark
+        width: 10px
+        height: 10px
+        border: 2px solid $orange
+        border-radius: 50%
+        &:last-child,
+        &:first-child
+            margin: 0
