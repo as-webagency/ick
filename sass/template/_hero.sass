@@ -11,6 +11,7 @@
         max-width: 750px
     &__content
         margin-left: 15px
+        position: relative
     &__description
         max-width: 430px
         margin: 0 0 67px
@@ -36,16 +37,20 @@
         max-width: 294px
         height: 77px
         margin-bottom: 23px
+        overflow: hidden
         position: relative
-        z-index: 5
-        &::after
-            content: ''
-            position: absolute
-            top: 0
-            right: -25px
-            background: url('../img/hammer.png') center no-repeat
-            width: 101px
-            height: 84px 
+        &-hidden
+            overflow: hidden
+            position: relative
+            display: none
+            // &::after
+            //     content: ''
+            //     position: absolute
+            //     top: 0
+            //     right: -25px
+            //     background: url('../img/hammer.png') center no-repeat
+            //     width: 101px
+            //     height: 84px 
     &__bonus
         margin: 0 0 22px 3px
         color: $white
@@ -75,6 +80,37 @@
                 margin-bottom: 0
     &__expertises
         margin-bottom: 12px
+    &__link
+        position: relative
+        max-width: 294px
+        z-index: 10
+        &-hidden
+            position: relative
+            max-width: 294px
+            z-index: 10
+            display: none
+            &::after
+                content: ''
+                position: absolute
+                top: -77px
+                right: -25px
+                background: url('../img/hammer.png') center no-repeat
+                width: 101px
+                height: 84px 
+                cursor: pointer
+                pointer-events: none
+                z-index: 5
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: -25px
+            background: url('../img/hammer.png') center no-repeat
+            width: 101px
+            height: 84px 
+            cursor: pointer
+            pointer-events: none
+            z-index: 5
 .expertise
     &:nth-child(2)
         .expertise
@@ -99,11 +135,11 @@
         width: 100%
         height: 704px       
         position: absolute
-        top: 32%
-        right: 29%
+        top: 125px
+        right: 195px
         &__position
             position: absolute
-            right: 26%
+            right: 25%
             bottom: 21.5%
             color: $white
             &::after
@@ -116,7 +152,7 @@
                 left: 0
         &__name
             position: absolute
-            right: 10%
+            right: 9%
             bottom: 13.5%
             color: $white
             font-size: 18px
@@ -126,23 +162,23 @@
                 +bold
         &__experience
             position: absolute
-            right: 6.6%
+            right: 5.6%
             bottom: 7.7%
             color: $white
             font-size: 18px
             +bold
     &-yulia
-        // background: url('../img/yulia.png') center no-repeat
-        // max-width: 704px
-        // width: 100%
-        // height: 704px       
-        // position: absolute
-        // top: 40%
-        // right: 10%
+        background: url('../img/yulia.png') center no-repeat
+        max-width: 585px
+        width: 100%
+        height: 585px       
+        position: absolute
+        top: -30px
+        right: -115px
         &__position
             position: absolute
-            right: 19%
-            bottom: 30.5%
+            right: 20%
+            bottom: 13%
             color: $white
             &::after
                 content: ''
@@ -150,12 +186,12 @@
                 height: 1px
                 background-color: $white
                 position: absolute
-                bottom: -7px
+                bottom: -9px
                 left: 45px
         &__name
             position: absolute
-            right: 19%
-            bottom: 24.5%
+            right: 20%
+            bottom: 3%
             color: $white
             font-size: 18px
             line-height: 21px
@@ -166,8 +202,8 @@
                 text-align: right
         &__experience
             position: absolute
-            right: 19%
-            bottom: 20%
+            right: 20%
+            bottom: -4%
             color: $white
             font-size: 18px
             +bold

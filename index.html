@@ -43,7 +43,9 @@
                 <div class="hero__content">
                     <h1 class="hero__title"><span>Помогу сохранить</span> и защитить cовместно нажитое <span>имущество при разводе</span></h1>
                     <p class="hero__description"><span>Ответьте на 7 вопросов за 30 секунд</span> и получите <strong>бесплатно</strong>, анализ Вашей ситуации + готовые решения на консультации от адвоката с 18 летним опытом судебной практики<br> в области семейного права.</p>
-                    <button class="button hero__button button--primary"><span>Получить <strong>консультацию</strong> и прогноз</span></button>
+                    <div class="hero__link">
+                        <a href="https://mrqz.me/5ee278e72fb8350044c3645f" class="button hero__button button--primary"><span>Получить <strong>консультацию</strong> и прогноз</span></a>
+                    </div>
                     <div class="hero__bonus">Ваши бонусы в конце опроса:</div>
                     <ul class="hero__bonus-list">
                         <li class="hero__bonus-item">Консультация с выводами и рекомендациями</li>
@@ -75,6 +77,9 @@
                             <div class="lawyer-yulia__experience">Опыт 20 лет судебной<br> практики</div>
                         </div>
                     </div>
+                    <div class="hero__link-hidden">
+                        <a href="https://mrqz.me/5ee278e72fb8350044c3645f" class="button hero__button-hidden button--primary"><span>Получить <strong>консультацию</strong> и прогноз</span></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -93,6 +98,28 @@
             </div>
         </div>
     </footer>
+
+    <div class="mask"></div>
+    <div class="modal">
+        <button class="modal__close"><span></span></button>
+        <h2 class="modal__title">БЕСПЛАНАЯ КОНСУЛЬТАЦИЯ</h2>
+        <p class="modal__text">Введите номер телефона, перезвоню Вам течении 5 минут.</p>
+        <form action="send.php" class="modal__form" method="post">
+            <div class="modal__group">
+                <input type="tel" class="input modal__input input--primary" name="user_phone" placeholder="Введите номер телефона">
+            </div>
+            <button class="button modal__button button--primary" type="submit">Жду звонка</button>
+            <div class="modal__policy">
+                <input type="checkbox" name="user_checkbox" id="policy-checkbox-modal" class="policy__checkbox" checked>
+                <label for="policy-checkbox-modal" class="policy__label">С политикой конфидециальности<br> ознакомлен</label>
+            </div>
+        </form>
+        <div class="lawyer-yulia">
+            <div class="lawyer-yulia__position">Адвокат</div>
+            <div class="lawyer-yulia__name"><span>Шадрина</span>Юлия Сергеевна</div>
+            <div class="lawyer-yulia__experience">Опыт 20 лет судебной<br> практики</div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="./js/script.js"></script>

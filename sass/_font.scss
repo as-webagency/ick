@@ -36,3 +36,16 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'MullerBlack';
+    src: url('../fonts/MullerBlack.eot');
+    src: local('☞MullerBlack'), local('MullerBlack'),
+        url('../fonts/MullerBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerBlack.woff2') format('woff2'),
+        url('../fonts/MullerBlack.woff') format('woff'),
+        url('../fonts/MullerBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

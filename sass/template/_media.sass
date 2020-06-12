@@ -1,0 +1,344 @@
+@media (max-width: 1430px)
+    .hero
+        .lawyer
+            &-yulia
+                right: -50px
+@media (max-width: 1430px)
+    .hero
+        .lawyer
+            &-yulia
+                right: 0
+            &-oksana
+                right: 240px
+@media (max-width: 1180px)
+    .hero
+        .lawyer
+            &-yulia   
+                max-width: 520px 
+            &-oksana
+                max-width: 640px     
+            &-oksana
+                &__name
+                    right: 7%
+                &__experience
+                    right: 3.5%
+@media (max-width: 1130px)
+    .hero
+        .lawyer
+            &-yulia,   
+            &-oksana                          
+                background-size: contain
+            &-yulia   
+                max-width: 380px 
+            &-oksana  
+                max-width: 480px 
+                &__name
+                    right: 1%
+                &__experience
+                    right: -18px    
+@media (max-width: 1000px)
+    .modal
+        max-width: 95%
+    .hero
+        padding: 40px 0 50px
+        &__content
+            margin-left: 0
+@media (max-width: 985px)
+    body
+        min-height: 1058px
+    .hero
+        &__title
+            font-size: 38px
+            line-height: 38px
+            max-width: 600px
+        .lawyer
+            &-oksana
+                max-width: 280px
+                &__position
+                    bottom: 28%
+                &__name
+                    right: -15%
+                    bottom: 19%
+                &__experience
+                    right: -23%
+                    bottom: 12%
+            &-yulia
+                max-width: 280px
+                &__position
+                    bottom: 26%
+                &__name
+                    bottom: 15%
+                &__experience
+                    bottom: 7%
+    .expertise
+        &__text
+            width: 170px
+        &:nth-child(2) 
+            .expertise
+                &__text
+                    width: 120px
+@media (max-width: 965px)
+    .modal
+        padding: 40px 20px
+@media (max-width: 900px)
+    .modal
+        padding: 40px 20px
+        .lawyer
+            &-yulia
+                height: 518px
+                top: 0
+                &__experience
+                    bottom: 8%
+        &__text
+            font-size: 24px
+            max-width: 390px
+@media (max-width: 800px)
+    .hero
+        .lawyer
+            display: none
+        &__title
+            margin: 0 auto 47px
+        &__description
+            margin: 0 auto 60px
+            &::after
+                display: none
+        &__link
+            margin: 0 auto 23px
+        &__bonus
+            margin: 0 auto 22px
+            text-align: center
+            &-list
+                margin: 0 auto 97px
+                max-width: 280px
+    .expertises
+        justify-content: center                
+@media (max-width: 768px)
+    .logo
+        &__text
+            font-size: 11.56px
+            max-width: 200px
+            margin: 5px 0 0 15px
+    .phone
+        font-size: 23.27px
+    .contacts
+        &__social
+            margin: -3px 10px 0 0 
+    .social
+        &__item
+            &:first-child
+                margin-right: 15px 
+@media (max-width: 700px)  
+    .modal
+        padding: 20px 10px
+        .lawyer 
+            &-yulia
+                display: none
+        &__close 
+            top: 10px
+            right: 10px
+        &__form
+            margin: 0 auto   
+        &__title
+            margin: 0
+            margin-top: 30px
+            font-size: 24px    
+            text-align: center  
+        &__text
+            text-align: center
+            margin: 0 auto 30px
+            font-size: 22px
+        &__button
+            margin-bottom: 5px
+        &__group
+            margin-bottom: 15px
+@media (max-width: 640px)
+    .circles 
+        display: none
+    body
+        min-height: 1100px
+    .header
+        &__content
+            +flex-column-center 
+        &__contacts
+            margin-top: 20px
+    .contacts
+        &-telephone
+            &__button
+                display: none  
+    .footer
+        &__content
+            justify-content: center                
+@media (max-width: 564px)
+    body
+        min-height: 1150px 
+@media (max-width: 490px)
+    body
+        min-height: 1230px
+    .expertise
+        &s
+            +flex-column-center
+        &__text
+            width: 240px
+            br
+                display: none
+        &:nth-child(2) 
+            margin: 20px 0
+            .expertise
+                &__text
+                    width: 240px  
+@media (max-width: 480px) 
+    .hero
+        .container
+            padding: 0
+    body
+        background-image: url('../img/body-mob.jpg')
+        min-height: 2550px
+    .header
+        padding: 38px 0 17px
+        &__contacts
+            margin-top: 32px
+    .logo
+        &__image
+            width: 61px
+            height: 52px
+        &__text
+            margin: 5px 0 0 22px
+            line-height: 14px
+    .contacts
+        &__social
+            margin: -3px 20px 0 0  
+    .social
+        &__item
+            &:first-child
+                margin-right: 12px   
+        &__link
+            &-telegram, 
+            &-whatsapp
+                width: 30px
+                height: 30px         
+    .hero
+        padding: 0
+        &--line
+            border: none 
+        &__title
+            font-size: 27px
+            line-height: 27px
+            max-width: 280px
+            margin: 6px auto 22px
+        &__description
+            font-size: 15px
+            max-width: 283px
+            line-height: 19px
+            margin: 0 auto 42px
+        &__button
+            &-hidden
+                display: block
+                min-width: 278px
+                width: 100%
+                height: 77px
+                +flex-content-center
+        &__link
+            max-width: 278px
+            margin: 0 auto 37px
+            &-hidden
+                +flex-content-center
+                max-width: 278px
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                bottom: -238%
+                height: 77px
+                &::after
+                    top: 0
+        &__bonus
+            position: relative
+            left: -10px
+        .lawyer
+            display: block
+            &-yulia,
+            &-oksana
+                max-width: 100%
+            &-yulia
+                top: 500px
+                &__position
+                    bottom: 11%
+                    right: 21%
+                &__name
+                    right: 21%
+                    bottom: 1%
+                &__experience
+                    right: 21%
+                    bottom: -6%
+            &-oksana
+                top: 1030px
+                right: 0
+                &__position
+                    top: 79%
+                    right: auto
+                    left: 21%
+                    &::after
+                       bottom: -24px 
+                &__name
+                    right: auto
+                    bottom: 10%
+                    left: 21%
+                &__experience
+                    right: auto
+                    bottom: 4%
+                    left: 21%
+        .expertise
+            margin-top: 13px
+            margin-bottom: 40px
+            &:nth-child(1)
+                position: relative
+                top: 28px
+                .expertise
+                    &__text
+                        width: 200px
+            &:nth-child(2)
+                position: relative
+                top: 29px
+                margin-bottom: 60px
+                .expertise
+                    &__text
+                        width: 120px
+            &:nth-child(3)
+                position: relative
+                top: 20px
+                .expertise
+                    &__text
+                        width: 120px
+            &s
+                border-top: 1px solid $line
+                border-bottom: 1px solid $line
+                width: 100%
+                position: absolute
+                bottom: -323%
+                left: 50%
+                transform: translateX(-50%)
+                text-align: center
+                padding-bottom: 40px
+    .footer
+        padding: 33px 0
+        position: absolute
+        bottom: 0
+        left: 50%
+        width: 100%
+        transform: translateX(-50%) 
+        bottom: -202%           
+@media (max-width: 425px)  
+    .modal  
+        &__title
+            font-size: 18px 
+        &__text
+            font-size: 16px 
+            max-width: 280px     
+        &__input,
+        &__button
+            height: 60px 
+    .policy
+        &__label
+            font-size: 12px 
+            &::before
+                margin-top: 0  
+                margin-right: 10px 

@@ -30,11 +30,12 @@
             width: 40px
             height: 40px
             +flex-content-center
-        &-telegram
-            svg
-                width: 18px
-                color: $yellow
+        &-telegram,
         &-whatsapp
+            transition: .3s
+            &:hover
+                svg
+                    color: $white
             svg
                 width: 18px
                 color: $yellow
@@ -45,6 +46,9 @@
     font-size: 30px
     color: $white
     display: block
+    transition: .3s
+    &:hover
+        color: $orange
     span
         +bold      
 .contacts
@@ -62,3 +66,7 @@
             padding-bottom: 4px
             border-bottom: 1px dashed $darkGrey
             margin-right: -5px
+            transition: .3s
+            &:hover
+                color: $orange
+                border-bottom: 1px dashed $orange

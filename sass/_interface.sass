@@ -6,13 +6,39 @@
         position: relative
 .input
     width: 100%
+    border-radius: 38px
+    border: none
     &::placeholder  
         opacity: 1
+        color: $black
+    &--primary
+        background-color: $white
 .button
     border-radius: 38px
     font-size: 14px
     width: 100%
     border: none
+    +flex-content-center
+    &::after
+        content: ''
+        display: block
+        width: 30px
+        height: 300px
+        margin-left: 20px
+        background: #ffffff
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 )
+        position: absolute
+        left: -40px
+        top: -150px
+        z-index: 1
+        transform: rotate(45deg)
+        transition: all 0.1s
+        animation-name: slideme
+        animation-duration: 3s
+        animation-delay: 0.05s
+        animation-timing-function: ease-in-out
+        animation-iteration-count: infinite
     span
         line-height: 16px
         text-align: center
@@ -23,3 +49,14 @@
         color: $black
         background-image: linear-gradient( 90deg, rgb(208,132,37) 0%, rgb(227,151,54) 57%, rgb(245,170,70) 100%)
         box-shadow: inset 0px 1px 7px 0px rgba(156, 194, 45, 0.32)
+
+@keyframes slideme
+  0%
+    left: -30px
+    margin-left: 0px
+  30%
+    left: 110%
+    margin-left: 80px
+  100%
+    left: 110%
+    margin-left: 80px
